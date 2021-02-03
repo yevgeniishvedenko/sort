@@ -4,14 +4,6 @@ template <typename T> void Sort(T arr[], const int n)
 {
 	for (int i = 0; i < n; i++)
 	{
-		arr[i] = rand() % 10000;
-		arr[i] /= 100;
-	}
-	for (int i = 0; i < n; i++) cout << arr[i] << "  ";
-	cout << endl;
-	//сортирока
-	for (int i = 0; i < n; i++)
-	{
 		for (int j = i + 1; j < n; j++)
 		{
 			if (arr[i] > arr[j])
@@ -22,30 +14,12 @@ template <typename T> void Sort(T arr[], const int n)
 			}
 		}
 	}
-	for (int i = 0; i < n; i++) cout << arr[i] << "  ";
-	cout << endl;
 }
 
 template <typename T> void Sort(T arr[ROWS][COLS], const int m, const int n)
 {
-	for (int i = 0; i < m; i++)
+	for (int c = 0; c <= (m * n); c++)
 	{
-		for (int j = 0; j < n; j++)
-		{
-			arr[i][j] = rand() % 1000;
-			arr[i][j] /= 10;
-		}
-	}
-	for (int i = 0; i < m; i++)
-	{
-		for (int j = 0; j < n; j++) cout << arr[i][j] << "  ";
-		cout << endl;
-	}
-	cout << endl;
-	//сортировка
-	for (int c = 0; c <= (m * n); c++)//проходы
-	{
-		//упоряд строки
 		for (int i = 0; i < m; i++)
 		{
 			for (int j = 0; j < n - 1; j++)
@@ -58,7 +32,6 @@ template <typename T> void Sort(T arr[ROWS][COLS], const int m, const int n)
 				}
 			}
 		}
-		//упоряд столбц
 		for (int x = 0; x < n; x++)
 		{
 			for (int z = 0; z < m - 1; z++)
@@ -71,10 +44,5 @@ template <typename T> void Sort(T arr[ROWS][COLS], const int m, const int n)
 				}
 			}
 		}
-	}
-	for (int i = 0; i < m; i++)
-	{
-		for (int j = 0; j < n; j++) cout << arr[i][j] << "  ";
-		cout << endl;
 	}
 }

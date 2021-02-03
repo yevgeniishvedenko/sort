@@ -21,6 +21,9 @@
     <ClCompile Include="sort.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="funct.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="functions.h">

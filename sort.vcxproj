@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="funct.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="sort.cpp" />
   </ItemGroup>
